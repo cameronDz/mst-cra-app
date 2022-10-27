@@ -1,5 +1,6 @@
 import { ChakraProvider, Box, theme } from "@chakra-ui/react"; 
-import TodoList from "./components/TodoList"; 
+import TodoList from "./components/TodoList";
+import TodoAdd from "./components/TodoAdd";
 import logo from './logo.svg';
 import './App.css';
 
@@ -11,6 +12,7 @@ function App() {
           <ChakraProvider theme={theme}>
             <Box maxWidth="8xl" margin="auto" p={5}> 
               <TodoList /> 
+              <TodoAdd />
             </Box>
           </ChakraProvider> 
       </header>
